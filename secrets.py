@@ -1,0 +1,7 @@
+LDAPS_SERVEUR = 'Find me'
+SVC_USER = 'Find me'
+SVC_PASSWORD = 'Find me'
+PRIVATE_KEY = 'Find me'
+CERT = 'Find me'
+ROOT_CA = 'Find me'
+LDAPS_PORT = 'Find me'
