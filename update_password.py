@@ -1,6 +1,5 @@
 import ldap3
 import config
-import logging
 import sys
 from ldap3.utils.hashed import hashed
 from ldap3 import * 
@@ -15,7 +14,7 @@ def connexion_ldaps_serveur():
         return connected
     
     except:
-        logging.info(f'Error in connexion_ldpas_serveur: {connected.result}')
+        print(f'Error in connexion_ldpas_serveur: {connected.result}')
 
 
 def change_passwords(user_name, new_password):
@@ -32,7 +31,7 @@ def change_passwords(user_name, new_password):
             
     
     except(Exception,) as error:
-        logging.error(f'Error in change_ad_passwords: {error}')
+        print(f'Error in change_ad_passwords: {error}')
 
 
 if __name__ == '__main__':
